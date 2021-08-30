@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Todo App</title>
+</head>
+<body class="theme-dark">
+    <div class="container">
+        <header>
+            <h1>TODO</h1>
+            <div class="theme-section">
+                <label for="theme"></label>
+                    <input type="checkbox" class="checkbox" name="theme" id="theme">
+            </div>
+        </header>
+        <main>
+            <div class="add-new-item flex-row">
+                <span></span>
+                <input type="text" placeholder="Create a new todo" name="addItem" id="addItem">
+            </div>
+            <section class="content">
+                <ul>
+                    <li class="flex-row">
+                        <label>
+                        <input type="checkbox" name="to-do-item1" checked>
+                        <span class="checkmark"></span>
+                        <span class="text">Text</span>
+                        </label>
+                        <span class="remove"></span>
+                    </li>
+                    <li class="flex-row">
+                        <label>
+                        <input type="checkbox" name="to-do-item2" >
+                        <span class="checkmark"></span>
+                        <span class="text"  >Text 2</span>
+                        </label>
+                        <span class="remove"></span>
+                    </li>
+                    <li class="flex-row">
+                        <label>
+                        <input type="checkbox" name="to-do-item3" >
+                        <span class="checkmark"></span>
+                        <span class="text">Text 3</span>
+                        </label>
+                        <span class="remove"></span>
+                    </li>
+                </ul>
+            </section>
+            <div class="bottom-items  flex-row">
+                <div class="items-left"><span>2 </span> items left</div>
+                <div class="filter flex-row">
+                    <label>
+                        <input type="radio" class="filter" name="filter" id="all" checked>
+                        <span>All</span>
+                    </label>
+                    <label >
+                        <input type="radio" class="filter" name="filter" id="active" >
+                        <span>Active</span>
+                    </label>
+                    <label >
+                        <input type="radio" class="filter" name="filter" id="Completed" >
+                        <span>Completed</span>
+                    </label>
+                </div>
+                <span class="clear">ClearCompleted</span>
+            </div>
+
+        </main>
+    </div>
+    <!--Scripting for to do-->
+    <script src="script.js"></script>
+</body>
+</html>

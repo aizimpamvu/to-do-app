@@ -162,6 +162,9 @@ ul li:hover .remove{
     display: block;
     position: relative;
 }
+ul li.hidden{
+ display: none;
+}
 .bottom-items{
     margin-top: 10px;
     justify-content: space-between;
